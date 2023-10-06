@@ -1,0 +1,13 @@
+
+<div class="container">
+  <% @flats.each do |flat| %>
+    <div class="card-product my-4">
+      <%= image_tag flat['imageUrl'] %>
+      <div class="card-product-infos">
+        <h2><%= flat['name'] %></h2>
+        <p>💰 <%= flat["price"] %> <%= flat["priceCurrency"] %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
